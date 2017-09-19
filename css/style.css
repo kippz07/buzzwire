@@ -1,0 +1,39 @@
+main {
+    height: 600px;
+    width: 600px;
+    background-color: orange;
+    margin: auto;
+}
+
+#square {
+    height: 317px;
+    width: 317px;
+    position: relative;
+    top: 140px;
+    left: 140px;
+    background-image: url('../images/square.png');
+    background-repeat: no-repeat;
+}
+
+#inner-square {
+    height: 100px;
+    width: 100px;
+    /*background-color: orange;*/
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#myCanvas {
+    height: 500px;
+    width: 500px;
+    /*background-color: white;*/
+}
+
+#canvas {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    right: 88px;
+    bottom: 88px;
+}
