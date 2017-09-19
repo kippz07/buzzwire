@@ -28,6 +28,7 @@ main {
     height: 500px;
     width: 500px;
     /*background-color: white;*/
+    pointer-events: none;
 }
 
 #canvas {
@@ -36,4 +37,5 @@ main {
     position: relative;
     right: 88px;
     bottom: 88px;
+    pointer-events: none;
 }
