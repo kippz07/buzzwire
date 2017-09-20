@@ -69,7 +69,7 @@ main {
 }
 
 #text {
-    position: absolute;
-    left: 260px;
+    text-align: center;
     font-size: 30px;
+    padding-top: 20px;
 }
