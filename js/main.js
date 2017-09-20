@@ -40,11 +40,19 @@ $(function () {
 
     }, 100);
 
+    function playSound(path) {
+      var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', path);
+      audioElement.play();
+    }
+
     function loseGame() {
       $text.html('You lose!');
       $main.css('background-color', 'red');
       $innerSquare.css('background-color', 'red');
       $breakLine.css('background-color', 'red');
+      playSound('raw/zap.wav');
+
       setTimeout(function () {
         $main.css('background-color', 'orange');
         $innerSquare.css('background-color', 'orange');
@@ -60,6 +68,19 @@ $(function () {
         $innerSquare.css('background-color', 'orange');
         $breakLine.css('background-color', 'orange');
       },300);
+
+      // $square.jrumble({
+      //   rotation: 20,
+      //   speed: 70
+      // }).trigger('startRumble');
+
+      $square.animate({
+        left: "+=20"
+      },100).animate({
+        left: "-=40"
+      },100).animate({
+        left: "+=20"
+      });
     }
 
 
