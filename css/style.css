@@ -3,12 +3,13 @@ main {
     width: 600px;
     background-color: orange;
     margin: auto;
+    position: relative;
 }
 
 #square {
     height: 317px;
     width: 317px;
-    position: relative;
+    position: absolute;
     top: 140px;
     left: 140px;
     background-image: url('../images/square.png');
@@ -16,26 +17,59 @@ main {
 }
 
 #inner-square {
-    height: 100px;
-    width: 100px;
-    /*background-color: orange;*/
-    position: relative;
-    top: 50px;
-    left: 50px;
+    height: 215px;
+    width: 215px;
+    background-color: orange;
+    position: absolute;
+    top: 52px;
+    left: 49px;
+    z-index: 1;
 }
 
 #myCanvas {
     height: 500px;
     width: 500px;
     /*background-color: white;*/
-    pointer-events: none;
+    /*pointer-events: none;*/
+    position: relative;
 }
 
 #canvas {
     height: 500px;
     width: 500px;
-    position: relative;
-    right: 88px;
-    bottom: 88px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
     pointer-events: none;
+}
+
+#break-line {
+    height: 40px;
+    width: 160px;
+    background-color: orange;
+    position: relative;
+    top: 135px;
+}
+
+#start-line {
+    height: 40px;
+    width: 160px;
+    background-color: green;
+    position: relative;
+    top: 55px;
+}
+
+#end-line {
+    height: 40px;
+    width: 160px;
+    background-color: red;
+    position: relative;
+    top: 95px;
+}
+
+#text {
+    position: absolute;
+    top: 45px;
+    left: 260px;
 }
