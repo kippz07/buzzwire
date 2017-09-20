@@ -70,6 +70,6 @@ main {
 
 #text {
     position: absolute;
-    top: 45px;
     left: 260px;
+    font-size: 30px;
 }
